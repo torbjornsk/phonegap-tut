@@ -9,7 +9,7 @@ var EmployeeView = function(employee) {
 
   this.initialize = function() {
       this.el = $('<div/>');
-      this.el.on('click', '.add-location-btn', this.addLocation);
+      this.el.on('click', '.add-location-btn', this.addLocation(event));
   };
 
   this.initialize();
